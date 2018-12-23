@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		685E2BCF21CFEAE200F3CE46 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685E2BCE21CFEAE200F3CE46 /* MainTabController.swift */; };
+		68B2342621C974D700A700FE /* pickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B2342521C974D700A700FE /* pickerViewController.swift */; };
+		68B2342A21C9862000A700FE /* imageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B2342921C9862000A700FE /* imageList.swift */; };
+		68B2342C21C9867300A700FE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B2342B21C9867300A700FE /* TableViewCell.swift */; };
+		68B2342E21C9869300A700FE /* imageForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B2342D21C9869300A700FE /* imageForm.swift */; };
+		68B2343021C986AE00A700FE /* imageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B2342F21C986AE00A700FE /* imageData.swift */; };
 		68CB5DB521B3B03F00054DF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB5DB421B3B03F00054DF3 /* AppDelegate.swift */; };
-		68CB5DB721B3B03F00054DF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB5DB621B3B03F00054DF3 /* ViewController.swift */; };
+		68CB5DB721B3B03F00054DF3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB5DB621B3B03F00054DF3 /* LoginViewController.swift */; };
 		68CB5DBA21B3B03F00054DF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CB5DB821B3B03F00054DF3 /* Main.storyboard */; };
 		68CB5DBC21B3B04000054DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CB5DBB21B3B04000054DF3 /* Assets.xcassets */; };
 		68CB5DBF21B3B04000054DF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CB5DBD21B3B04000054DF3 /* LaunchScreen.storyboard */; };
@@ -34,9 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		685E2BCE21CFEAE200F3CE46 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		68B2342521C974D700A700FE /* pickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickerViewController.swift; sourceTree = "<group>"; };
+		68B2342921C9862000A700FE /* imageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageList.swift; sourceTree = "<group>"; };
+		68B2342B21C9867300A700FE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		68B2342D21C9869300A700FE /* imageForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageForm.swift; sourceTree = "<group>"; };
+		68B2342F21C986AE00A700FE /* imageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageData.swift; sourceTree = "<group>"; };
 		68CB5DB121B3B03F00054DF3 /* iBabyMain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBabyMain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CB5DB421B3B03F00054DF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68CB5DB621B3B03F00054DF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68CB5DB621B3B03F00054DF3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		68CB5DB921B3B03F00054DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68CB5DBB21B3B04000054DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68CB5DBE21B3B04000054DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +86,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68B2342721C97AF700A700FE /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+				68B2342521C974D700A700FE /* pickerViewController.swift */,
+			);
+			path = InfoView;
+			sourceTree = "<group>";
+		};
+		68B2342821C97BF400A700FE /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				68B2342D21C9869300A700FE /* imageForm.swift */,
+				68B2342921C9862000A700FE /* imageList.swift */,
+				68B2342F21C986AE00A700FE /* imageData.swift */,
+				68B2342B21C9867300A700FE /* TableViewCell.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		68CB5DA821B3B03F00054DF3 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +128,11 @@
 		68CB5DB321B3B03F00054DF3 /* iBabyMain */ = {
 			isa = PBXGroup;
 			children = (
+				68B2342821C97BF400A700FE /* MainView */,
+				68B2342721C97AF700A700FE /* InfoView */,
 				68CB5DB421B3B03F00054DF3 /* AppDelegate.swift */,
-				68CB5DB621B3B03F00054DF3 /* ViewController.swift */,
+				68CB5DB621B3B03F00054DF3 /* LoginViewController.swift */,
+				685E2BCE21CFEAE200F3CE46 /* MainTabController.swift */,
 				68CB5DB821B3B03F00054DF3 /* Main.storyboard */,
 				68CB5DBB21B3B04000054DF3 /* Assets.xcassets */,
 				68CB5DBD21B3B04000054DF3 /* LaunchScreen.storyboard */,
@@ -256,8 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68CB5DB721B3B03F00054DF3 /* ViewController.swift in Sources */,
+				68B2343021C986AE00A700FE /* imageData.swift in Sources */,
+				68B2342C21C9867300A700FE /* TableViewCell.swift in Sources */,
+				685E2BCF21CFEAE200F3CE46 /* MainTabController.swift in Sources */,
+				68B2342E21C9869300A700FE /* imageForm.swift in Sources */,
+				68CB5DB721B3B03F00054DF3 /* LoginViewController.swift in Sources */,
+				68B2342A21C9862000A700FE /* imageList.swift in Sources */,
 				68CB5DB521B3B03F00054DF3 /* AppDelegate.swift in Sources */,
+				68B2342621C974D700A700FE /* pickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
