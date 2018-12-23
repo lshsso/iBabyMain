@@ -86,6 +86,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		685E2BD021D01DDC00F3CE46 /* WeightChart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WeightChart;
+			sourceTree = "<group>";
+		};
 		68B2342721C97AF700A700FE /* InfoView */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +135,7 @@
 		68CB5DB321B3B03F00054DF3 /* iBabyMain */ = {
 			isa = PBXGroup;
 			children = (
+				685E2BD021D01DDC00F3CE46 /* WeightChart */,
 				68B2342821C97BF400A700FE /* MainView */,
 				68B2342721C97AF700A700FE /* InfoView */,
 				68CB5DB421B3B03F00054DF3 /* AppDelegate.swift */,
