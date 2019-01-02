@@ -15,12 +15,14 @@ class MainView: UIViewController {
     @IBOutlet var PWeakLbl: UILabel!
     
     var LabelText = String()
+    var LblText = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         BabyName.text = LabelText
+        PWeakLbl.text = LblText
         // Do any additional setup after loading the view.
     }
     
