@@ -19,57 +19,30 @@ class SettingViewController: UIViewController {
     
     @IBOutlet var BabyNameField: UITextField!
     
-    @IBAction func save(_ sender: Any)
-    {
-        if BabyNameField.text != ""
-        {
-            performSegue(withIdentifier: "segue", sender: self)
-        }
-        //me!!
-        if PWeakField.text != ""
-        {
-            performSegue(withIdentifier: "segue", sender: self)
-        }
+/*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let DestViewController : MainView = segue.destination as! MainView
+        DestViewController.LabelText = BabyNameField.text!
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+ */
+override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         let secondController = segue.destination as! MainView
         secondController.LabelText = BabyNameField.text!
-        secondController.LblText = PWeakField.text! // me!!
+        secondController.LblText = PWeakField.text! 
     }
+    
+    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
         createDatePicker()
-        
-       /* datePicker = UIDatePicker()
-        datePicker?.datePickerMode = .date
-        datePicker?.addTarget(self, action: #selector(SettingViewController.dateChanged(datePicker:)), for: .valueChanged)
-        
-        let TapGesture = UITapGestureRecognizer(target: self, action: #selector(SettingViewController.viewTapped(gestureRecognizer:)))
-        
-        view.addGestureRecognizer(TapGesture)
-        
-        PWeakField.inputView = datePicker
-         */
-    }
-   /* @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
-        view.endEditing(true)
     }
     
-    @objc func dateChanged(datePicker: UIDatePicker)
-    {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY/MM/DD"
-        PWeakField.text = dateFormatter.string(from: datePicker.date)
-        view.endEditing(true)
-        
-        
-        
-    }*/
+    //CREATE DATEPICKER
+    
     func createDatePicker(){
         //Format the display of our datePicker
         datePicker.datePickerMode = .date

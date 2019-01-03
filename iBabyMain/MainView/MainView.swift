@@ -14,6 +14,7 @@ class MainView: UIViewController {
     
     @IBOutlet var PWeakLbl: UILabel!
     
+    
     var LabelText = String()
     var LblText = String()
     
