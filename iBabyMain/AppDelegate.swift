@@ -12,8 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    //이거 weightChart에 쓰일 코드
-    //var imgList = [dataM]()
+    var imagelist = [imageData]() //메모데이터를 저장할 배열 변수
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

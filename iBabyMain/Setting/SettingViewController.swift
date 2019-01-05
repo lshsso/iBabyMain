@@ -10,6 +10,28 @@ import UIKit
 
 class SettingViewController: UIViewController {
     
+   
+    /*
+    @IBAction func EditSave(_ sender: Any) {
+        
+        let mainTabController = storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
+        mainTabController.selectedViewController = mainTabController.viewControllers?[1]
+        present(mainTabController, animated: true, completion: nil)
+       
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        세그웨이준비
+        if segue.identifier == "MasterToDetail" {
+            어느세그웨이
+            let detailViewController = segue.destinationViewController as! DetailViewController
+            어느화면으로
+            detailViewController.paper = sender as? Paper
+            프로퍼티값
+        }
+    }*/
+
+    
     
     @IBOutlet var PWeakField: UITextField!
     
@@ -19,12 +41,11 @@ class SettingViewController: UIViewController {
     
     @IBOutlet var BabyNameField: UITextField!
     
-/*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let DestViewController : MainView = segue.destination as! MainView
-        DestViewController.LabelText = BabyNameField.text!
-    }
- */
+   
+    
+
+  
+
 override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         let secondController = segue.destination as! MainView
@@ -36,8 +57,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     
     override func viewDidLoad()
     {
-        super.viewDidLoad()
-        
+        super.viewDidLoad()    
         createDatePicker()
     }
     
