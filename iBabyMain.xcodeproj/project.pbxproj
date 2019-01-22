@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68171D2A21E65CEF0069F2A8 /* weightList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68171D2921E65CEF0069F2A8 /* weightList.swift */; };
+		68171D2C21E65CFE0069F2A8 /* weightForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68171D2B21E65CFE0069F2A8 /* weightForm.swift */; };
+		68171D2E21E65D150069F2A8 /* weightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68171D2D21E65D150069F2A8 /* weightCell.swift */; };
+		68171D3021E65D260069F2A8 /* weightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68171D2F21E65D260069F2A8 /* weightData.swift */; };
 		681975BE21DA11AD0043ACDF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681975BD21DA11AD0043ACDF /* SettingViewController.swift */; };
 		681975C421DC697A0043ACDF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681975C321DC697A0043ACDF /* MainView.swift */; };
 		685E2BCF21CFEAE200F3CE46 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685E2BCE21CFEAE200F3CE46 /* MainTabController.swift */; };
@@ -42,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68171D2921E65CEF0069F2A8 /* weightList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weightList.swift; sourceTree = "<group>"; };
+		68171D2B21E65CFE0069F2A8 /* weightForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weightForm.swift; sourceTree = "<group>"; };
+		68171D2D21E65D150069F2A8 /* weightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weightCell.swift; sourceTree = "<group>"; };
+		68171D2F21E65D260069F2A8 /* weightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weightData.swift; sourceTree = "<group>"; };
 		681975BD21DA11AD0043ACDF /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		681975C321DC697A0043ACDF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		685E2BCE21CFEAE200F3CE46 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -109,9 +117,20 @@
 			name = ImageList;
 			sourceTree = "<group>";
 		};
+		6831FA4421F78E8D00CE3A85 /* MarketView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MarketView;
+			sourceTree = "<group>";
+		};
 		685E2BD021D01DDC00F3CE46 /* WeightChart */ = {
 			isa = PBXGroup;
 			children = (
+				68171D2921E65CEF0069F2A8 /* weightList.swift */,
+				68171D2B21E65CFE0069F2A8 /* weightForm.swift */,
+				68171D2D21E65D150069F2A8 /* weightCell.swift */,
+				68171D2F21E65D260069F2A8 /* weightData.swift */,
 			);
 			path = WeightChart;
 			sourceTree = "<group>";
@@ -159,6 +178,7 @@
 			children = (
 				681975BF21DA144D0043ACDF /* Setting */,
 				68B2342821C97BF400A700FE /* MainView */,
+				6831FA4421F78E8D00CE3A85 /* MarketView */,
 				68B2342721C97AF700A700FE /* InfoView */,
 				68CB5DB421B3B03F00054DF3 /* AppDelegate.swift */,
 				68CB5DB621B3B03F00054DF3 /* LoginViewController.swift */,
@@ -321,15 +341,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				68B2343021C986AE00A700FE /* imageData.swift in Sources */,
+				68171D2A21E65CEF0069F2A8 /* weightList.swift in Sources */,
 				68B2342C21C9867300A700FE /* TableViewCell.swift in Sources */,
 				685E2BCF21CFEAE200F3CE46 /* MainTabController.swift in Sources */,
 				681975C421DC697A0043ACDF /* MainView.swift in Sources */,
 				681975BE21DA11AD0043ACDF /* SettingViewController.swift in Sources */,
+				68171D2E21E65D150069F2A8 /* weightCell.swift in Sources */,
+				68171D3021E65D260069F2A8 /* weightData.swift in Sources */,
 				68B2342E21C9869300A700FE /* imageForm.swift in Sources */,
 				68CB5DB721B3B03F00054DF3 /* LoginViewController.swift in Sources */,
 				68B2342A21C9862000A700FE /* imageList.swift in Sources */,
 				68CB5DB521B3B03F00054DF3 /* AppDelegate.swift in Sources */,
 				68B2342621C974D700A700FE /* pickerViewController.swift in Sources */,
+				68171D2C21E65CFE0069F2A8 /* weightForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,7 +43,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="산모 체중 변화 기록 / 보기"/>
                                 <connections>
-                                    <segue destination="N2N-hz-uy7" kind="show" id="AlU-2s-R7M"/>
+                                    <segue destination="N2N-hz-uy7" kind="show" id="vLT-hw-T2g"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="임신 주차" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgE-Ca-O7t">
@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="00g-1Y-V3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="236" y="-834"/>
+            <point key="canvasLocation" x="444" y="-842"/>
         </scene>
         <!--Image List-->
         <scene sceneID="jyw-6o-eiK">
@@ -137,7 +137,7 @@
             </objects>
             <point key="canvasLocation" x="1983.2" y="-842.36453201970448"/>
         </scene>
-        <!--Title-->
+        <!--Image Form-->
         <scene sceneID="wVg-Na-Nvi">
             <objects>
                 <viewController id="wAW-ul-Bzo" customClass="imageForm" customModule="iBabyMain" customModuleProvider="target" sceneMemberID="viewController">
@@ -187,7 +187,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aUw-N0-U1O"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="7IF-cT-RlQ">
+                    <navigationItem key="navigationItem" id="7IF-cT-RlQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Wrk-Pg-Nw0">
                             <connections>
                                 <action selector="pick:" destination="wAW-ul-Bzo" id="reg-eP-Ogg"/>
@@ -203,24 +203,20 @@
             </objects>
             <point key="canvasLocation" x="2740" y="-842.36453201970448"/>
         </scene>
-        <!--View Controller-->
+        <!--Weight List-->
         <scene sceneID="UAd-TC-MAt">
             <objects>
-                <viewController id="N2N-hz-uy7" sceneMemberID="viewController">
+                <viewController id="N2N-hz-uy7" customClass="weightList" customModule="iBabyMain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zj3-B3-Zl7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iay-fh-boz">
-                                <rect key="frame" x="0.0" y="36" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b5y-dt-NEb">
                                 <rect key="frame" x="16" y="388" width="343" height="341"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="42" id="sny-Jb-0BT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="42" id="sny-Jb-0BT" customClass="weightCell" customModule="iBabyMain" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sny-Jb-0BT" id="OGI-GN-d6a">
@@ -228,14 +224,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoP-Ib-dPQ">
-                                                    <rect key="frame" x="15" y="11" width="105" height="29"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoV-nW-AlC">
-                                                    <rect key="frame" x="151" y="10" width="104" height="30"/>
+                                                    <rect key="frame" x="15" y="11" width="128" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -247,19 +236,35 @@
                                                     <state key="normal" title="Delete">
                                                         <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
-                                                    <connections>
-                                                        <action selector="deleteWeight:" destination="sny-Jb-0BT" eventType="touchUpInside" id="6B0-3N-cBh"/>
-                                                    </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6X-nZ-wTR">
+                                                    <rect key="frame" x="248" y="14" width="21" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoV-nW-AlC">
+                                                    <rect key="frame" x="165" y="11" width="81" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="WeightLabel" destination="XoV-nW-AlC" id="5HX-qp-f9R"/>
-                                            <outlet property="regdate" destination="SoP-Ib-dPQ" id="OwT-Qu-DVo"/>
+                                            <outlet property="regdate" destination="SoP-Ib-dPQ" id="mtP-Q5-A4X"/>
+                                            <outlet property="weightLbl" destination="XoV-nW-AlC" id="kUw-Ze-B4Q"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vuX-Ql-VFE">
+                                <rect key="frame" x="16" y="103" width="343" height="277"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HRd-D9-a2C"/>
@@ -267,24 +272,27 @@
                     <navigationItem key="navigationItem" id="9DU-R0-hi3">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hPw-qP-OLd">
                             <connections>
-                                <action selector="addNewWeight:" destination="N2N-hz-uy7" id="w76-Hx-d27"/>
+                                <segue destination="2iQ-lc-uyF" kind="show" id="3LO-Ce-dFU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tblList" destination="b5y-dt-NEb" id="YlY-dL-Sgk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lV0-91-S2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3127.1999999999998" y="-180.29556650246306"/>
+            <point key="canvasLocation" x="2332" y="-120.44334975369459"/>
         </scene>
-        <!--View Controller-->
+        <!--Weight Form-->
         <scene sceneID="zVw-BH-4aD">
             <objects>
-                <viewController id="2iQ-lc-uyF" sceneMemberID="viewController">
+                <viewController id="2iQ-lc-uyF" customClass="weightForm" customModule="iBabyMain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bf8-Oi-6Jt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ8-Dk-FuU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="몸무게 입력해주셈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ8-Dk-FuU">
                                 <rect key="frame" x="33" y="191" width="311" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -308,9 +316,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SR-rU-ZY6">
                                 <rect key="frame" x="120" y="426" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="SAVE"/>
                                 <connections>
-                                    <action selector="save:" destination="2iQ-lc-uyF" eventType="touchUpInside" id="CCC-FV-FoI"/>
+                                    <action selector="addWeight:" destination="2iQ-lc-uyF" eventType="touchUpInside" id="OfB-Fx-g9J"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -318,14 +326,14 @@
                         <viewLayoutGuide key="safeArea" id="USi-3K-4UG"/>
                     </view>
                     <connections>
-                        <outlet property="contents" destination="yZQ-Pu-eny" id="HuI-mL-92Z"/>
+                        <outlet property="txtField" destination="yZQ-Pu-eny" id="EKL-Rj-BdB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWu-1T-mPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3868" y="-180.29556650246306"/>
+            <point key="canvasLocation" x="3148" y="-120"/>
         </scene>
-        <!--Item-->
+        <!--set-->
         <scene sceneID="PTQ-aX-GXw">
             <objects>
                 <viewController restorationIdentifier="settingVC" storyboardIdentifier="settingVC" id="b7c-2N-9gi" customClass="SettingViewController" customModule="iBabyMain" customModuleProvider="target" sceneMemberID="viewController">
@@ -373,7 +381,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kwH-w4-gu1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="E1S-Ss-B0n"/>
+                    <tabBarItem key="tabBarItem" title="set" image="icons8-settings-25" selectedImage="icons8-settings-25" id="E1S-Ss-B0n"/>
                     <navigationItem key="navigationItem" id="im9-wa-pKE">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="93M-CC-a2A"/>
                     </navigationItem>
@@ -384,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="InA-bP-CJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="193" y="-112"/>
+            <point key="canvasLocation" x="-2078" y="-157"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="1dx-IG-3Kd">
@@ -414,7 +422,7 @@
             </objects>
             <point key="canvasLocation" x="-1295" y="-1595"/>
         </scene>
-        <!--V1-->
+        <!--info-->
         <scene sceneID="jbc-MA-nnB">
             <objects>
                 <viewController id="kjT-Xz-U3K" sceneMemberID="viewController">
@@ -469,7 +477,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="n12-Jo-VMl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="V1" id="a6I-7j-bMJ"/>
+                    <tabBarItem key="tabBarItem" title="info" image="icons8-information-25" selectedImage="icons8-information-25" id="a6I-7j-bMJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7sz-JT-dxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -534,7 +542,7 @@
             </objects>
             <point key="canvasLocation" x="236" y="-1495"/>
         </scene>
-        <!--V3-->
+        <!--market-->
         <scene sceneID="cB0-na-C8K">
             <objects>
                 <viewController id="Fxu-uU-Ci2" sceneMemberID="viewController">
@@ -551,11 +559,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="eXD-1K-sUT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="V3" id="qAu-H4-yXu"/>
+                    <tabBarItem key="tabBarItem" title="market" image="icons8-add-shopping-cart-25" selectedImage="icons8-add-shopping-cart-25" id="qAu-H4-yXu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MjY-5t-Gmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2380" y="-179.55665024630542"/>
+            <point key="canvasLocation" x="-1159" y="-81"/>
         </scene>
         <!--Main Tab Controller-->
         <scene sceneID="BSw-NK-NMn">
@@ -577,11 +585,11 @@
             </objects>
             <point key="canvasLocation" x="-1158" y="-842"/>
         </scene>
-        <!--V2-->
+        <!--main-->
         <scene sceneID="sQH-OK-XsJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uks-6X-TDQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="V2" id="o3z-4T-xOE"/>
+                    <tabBarItem key="tabBarItem" title="main" image="icons8-two-hearts-25" largeContentSizeImage="icons8-heart-balloon-25" selectedImage="icons8-two-hearts-25" id="o3z-4T-xOE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1xF-IW-e1G">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -612,15 +620,39 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y6d-g0-yQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1274" y="-842"/>
+            <point key="canvasLocation" x="1183" y="-856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bi4-Uy-7bz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="beU-QN-TTG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VS3-AX-WGf">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N2N-hz-uy7" kind="relationship" relationship="rootViewController" id="ajY-hZ-AA1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8I-tI-5Qp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1389.5999999999999" y="-120.44334975369459"/>
         </scene>
     </scenes>
     <resources>
+        <image name="icons8-add-shopping-cart-25" width="18.75" height="18.75"/>
+        <image name="icons8-heart-balloon-25" width="18.75" height="18.75"/>
+        <image name="icons8-information-25" width="18.75" height="18.75"/>
+        <image name="icons8-settings-25" width="18.75" height="18.75"/>
+        <image name="icons8-two-hearts-25" width="180" height="180"/>
         <image name="태아" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wf9-dD-HFh"/>
-        <segue reference="5yc-hw-g91"/>
-        <segue reference="5eh-Fh-Lxh"/>
+        <segue reference="c89-qt-Ftr"/>
+        <segue reference="ajY-hZ-AA1"/>
+        <segue reference="8am-IB-Kh4"/>
+        <segue reference="gkE-ah-onY"/>
     </inferredMetricsTieBreakers>
 </document>
